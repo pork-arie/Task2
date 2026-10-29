@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Sign up · kwento.</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">kwento<span>.</span></a>
+        <nav id="nav"></nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h1>Create an account</h1>
+            <form id="auth-form" data-mode="register">
+                <div id="error" class="error"></div>
+                <input name="name" placeholder="Name" required>
+                <input name="email" type="email" placeholder="Email" required>
+                <input name="password" type="password" placeholder="Password (at least 6 characters)" minlength="6" required>
+                <button type="submit">Sign up</button>
+            </form>
+            <p class="muted">Already have an account? <a href="/login.html">Log in</a></p>
+        </div>
+    </main>
+
+    <div id="toast" hidden></div>
+
+    <script src="/js/nav.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
